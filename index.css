@@ -1,0 +1,94 @@
+.attribution { font-size: 11px; text-align: center; position: absolute;top: 95vh; left: 20vw; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    margin-top: 0;
+    margin-right: 0;
+    background-image: url(images/bg-pattern-desktop.svg);
+    font-family: 'Josefin Sans', sans-serif;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4em;
+}
+.logo,.txt{
+  grid-area: 1/1/1/1;
+  margin-left: 12vw;
+  margin-top: 8vh;
+  color: hsl(0, 6%, 24%);
+}
+h1{
+    text-align: left;
+    padding-top: 4rem;
+    font-size: 4rem;
+    word-spacing: 300px;
+    letter-spacing: 10px;
+}
+.were{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+p{
+    color: hsl(0, 36%, 70%);
+    line-height: 1.75;
+    max-width: 90%;
+}
+sub{
+    display: none;
+    color: red;
+}
+input[type=email],button{
+    margin-top: 2rem;
+    padding: 16px;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 24px;
+}
+input[type=email]{
+    width: 60% ;
+}
+input[type=email]:invalid{
+    border-color: red;
+}
+button{
+    background-image: linear-gradient(hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+}
+.hero{
+     position: fixed;
+    left: 60vw;
+}
+
+
+@media only screen and (max-width:765px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        margin-top: 4vh;
+        margin-left: 8vw;
+        max-width: 25vw;
+        padding-bottom: 30px;
+    }
+    .hero{
+        position:absolute ;
+        left: 0vw;
+        width: 100vw;
+    }
+    h1{
+        text-align: center;
+    }
+    .txt{
+        margin-top: 60%;
+        text-align: center;
+        margin-left: 8vw;
+        margin-right: 8vw;
+        padding-bottom: 5vh;
+    }
+    footer{
+        display: none;
+    }
+}
+
+
+
