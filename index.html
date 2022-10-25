@@ -12,7 +12,7 @@
 <body>
 <div class="wrapper">
 
-  <img  class="logo" src="images/logo.svg" alt="logo">
+  <header><img  class="logo" src="images/logo.svg" alt="logo"></header>
 
   <picture>
     <source media="(max-width: 765px)" srcset="images/hero-mobile.jpg" />
@@ -20,7 +20,7 @@
     <img class="hero" src="images/hero-desktop.jpg" alt="model">
 </picture>
 
-  <div class="txt">
+  <main class="txt">
     <h1> <span class="were">WE'RE</span> COMING SOON</h1>
 
     <p>Hello fellow shoppers! We're currently building our new fashion store. 
@@ -28,10 +28,13 @@
 
     <label class="email"> 
       <input type="email" placeholder="Email Address">  
-      <button><img src="images/icon-arrow.svg" alt="submit button"></button>
-      <sub>Please provide a valid email</sub>
     </label>
-  </div>
+    <label for="btn" class="btn">
+      <button><img src="images/icon-arrow.svg" alt="submit button"></button>
+      <img class="error" src="images/icon-error.svg" alt="error-icon">
+    </label>
+
+  </main>
 
   <footer>
     <p class="attribution">

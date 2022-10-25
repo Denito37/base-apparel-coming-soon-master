@@ -4,6 +4,7 @@
 body{
     margin-top: 0;
     margin-right: 0;
+    box-sizing: border-box;
     background-image: url(images/bg-pattern-desktop.svg);
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -12,7 +13,7 @@ body{
     grid-template-columns: 1fr 1fr;
     column-gap: 4em;
 }
-.logo,.txt{
+header,main{
   grid-area: 1/1/1/1;
   margin-left: 12vw;
   margin-top: 8vh;
@@ -21,22 +22,19 @@ body{
 h1{
     text-align: left;
     padding-top: 4rem;
-    font-size: 4rem;
+    font-size: 4.5rem;
+    font-weight: 400;
     word-spacing: 300px;
     letter-spacing: 10px;
 }
-.were{
+h1 span{
     color: hsl(0, 36%, 70%);
     font-weight: 300;
 }
-p{
+main p{
     color: hsl(0, 36%, 70%);
     line-height: 1.75;
     max-width: 90%;
-}
-sub{
-    display: none;
-    color: red;
 }
 input[type=email],button{
     margin-top: 2rem;
@@ -50,11 +48,17 @@ input[type=email]{
 input[type=email]:invalid{
     border-color: red;
 }
+.error{
+    display: none;
+    position: absolute;
+    top: 84.5vh;
+    left: 33vw;
+}
 button{
     background-image: linear-gradient(hsl(0, 80%, 86%),hsl(0, 74%, 74%));
 }
 .hero{
-     position: fixed;
+    position: fixed;
     left: 60vw;
 }
 
@@ -64,7 +68,7 @@ button{
         display: flex;
         flex-direction: column;
     }
-    .logo{
+    header{
         margin-top: 4vh;
         margin-left: 8vw;
         max-width: 25vw;
