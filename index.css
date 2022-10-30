@@ -1,4 +1,4 @@
-.attribution { font-size: 11px; text-align: center; position: absolute;top: 95vh; left: 20vw; }
+.attribution { font-size: 11px; text-align: center; padding-top: 12px;}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 body{
@@ -22,8 +22,8 @@ header,main{
 h1{
     text-align: left;
     padding-top: 4rem;
-    font-size: 4.5rem;
     font-weight: 400;
+    font-size: 4.5rem;
     word-spacing: 300px;
     letter-spacing: 10px;
 }
@@ -79,18 +79,15 @@ button{
         left: 0vw;
         width: 100vw;
     }
-    h1{
+    main h1{
         text-align: center;
     }
-    .txt{
+    main{
         margin-top: 60%;
         text-align: center;
         margin-left: 8vw;
         margin-right: 8vw;
         padding-bottom: 5vh;
-    }
-    footer{
-        display: none;
     }
 }
 
