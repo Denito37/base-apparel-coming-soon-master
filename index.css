@@ -1,6 +1,8 @@
 .attribution { font-size: 11px; text-align: center; padding-top: 12px;}
 .attribution a { color: hsl(228, 45%, 44%); }
 
+@import url(https://fonts.google.com/specimen/Josefin+Sans);
+
 body{
     margin-top: 0;
     margin-right: 0;
@@ -58,8 +60,7 @@ button{
     background-image: linear-gradient(hsl(0, 80%, 86%),hsl(0, 74%, 74%));
 }
 .hero{
-    position: fixed;
-    left: 60vw;
+    float: right;
 }
 
 
