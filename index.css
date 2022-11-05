@@ -70,7 +70,9 @@ input[type="email"],button{
     filter: brightness(1.1);
 }
 .hero{
-    float: right;
+    position: fixed;
+    bottom: 0;
+    left: 60vw;
 }
 
 
