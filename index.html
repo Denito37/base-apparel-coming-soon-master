@@ -25,15 +25,19 @@
     <p>Hello fellow shoppers! We're currently building our new fashion store. 
     Add your email below to stay up-to-date with announcements and our launch deals.</p> 
 
-    <form action="#">
-      <label for="email" class="email"> 
-        <input type="email" placeholder="Email Address"> 
+    <form>
+      <label for="email"> 
+        <input type="email" class="email" placeholder="Email Address"> 
+      </label>
+      <label for="button">
+        <button class="button" onclick="error()"> <img src="images/icon-arrow.svg" alt="submit button">
+        </button>
         <img class="error" src="images/icon-error.svg" alt="error-icon"> 
       </label>
-      <label for="button" class="button">
-        <button><img src="images/icon-arrow.svg" alt="submit button"></button>
-      </label>
     </form>
+
+    <p class="message"> Please provide a valid email </p>
+
   </main>
 
   <footer>
@@ -42,6 +46,8 @@
       Coded by <a href="#">Denito37</a>.
     </p>
   </footer>
+
+  <script src="index.js"></script>
 
 </div>
 </body>
